@@ -1,0 +1,12 @@
+/* universal selector - removes default margin and padding from everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* applies to <body> */
+body {
+    color: #47624F;
+    font-family: Helvetica, Arial, sans-serif;
+  }
