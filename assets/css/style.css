@@ -233,10 +233,6 @@ flex-column {
         padding-right: 2%;
     }
 
-    .projects {
-        justify-content: flex-start;
-    }
-
     .project {
         flex: 0 1 350px;
         margin: 2%;
@@ -264,5 +260,6 @@ flex-column {
     .section-title {
         font-size: 30px;
     }
+
 }
 /* media queries end */
