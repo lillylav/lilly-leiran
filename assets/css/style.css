@@ -165,6 +165,7 @@ header nav ul li a {
 
 /* contact me section style start */
 footer {
+    display: block;
     background: var(--light-color);
     padding: 3%;
 }
