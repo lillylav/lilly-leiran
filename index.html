@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <title>Lilly's Portfolio</title>
   </head>
   <body>
@@ -36,7 +37,7 @@
             </div>
             <div class="info">
                 <img src="images/lilly.jpg" alt="lilly, a young woman with a blonde bob smiling in a collared shirt with pink fluff in her hair" />
-                <div class="flex-column">
+                <div class="flex-column bio">
                     <p>
                         My name is Lilly Leiran. I have a Bachelor’s Degree in English with an emphasis in Writing Studies from Utah Valley University 
                         and I’m currently in the process of earning a Full Stack Web Development Certificate from the University of Utah’s continuing 
@@ -61,10 +62,10 @@
         
         <!-- projects section -->
         <section id="my-projects" class="projects">
-            <div class="flex-column">
+            <div>
                 <h2 class="section-title">My Projects</h2>
             </div>
-            <div class="projects">
+            <div class="projects flex-column">
                 <!-- project cards 1 -->
                 <article class="project">
                     <div>
@@ -74,8 +75,10 @@
                 </article>
                 <!-- project card 2 -->
                 <article class="project">
-                    <img src="images/runbuddy.png" />
-                    <h4>Run Buddy Fitness Trainers</h4>
+                    <div>
+                        <img src="images/runbuddy.png" />
+                        <h4>Run Buddy Fitness Trainers</h4>
+                    </div>
                  </article>
             </div>
         </section>
@@ -84,12 +87,8 @@
         <footer id="contact-me" >
             <h2 class="section-title">Contact Me</h2>
             <div class="contact">
-                <p>
-                    lilly.leiran@gmail.com
-                </p>
-                <p>
-                    Github
-                </p>
+                <a href="mailto:lilly.leiran@gmail.com">lilly.leiran@gmail.com</a>
+                <a href="https://github.com/lillylav" target="_blank">Github Profile</href>
             </div>
         </footer>
   </body>
