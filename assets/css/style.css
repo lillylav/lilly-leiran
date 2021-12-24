@@ -14,8 +14,6 @@
 body {
     color: var(--dark-color);
     font-family: Helvetica, Arial, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -68,7 +66,7 @@ header nav ul li a {
 
 /* hero style section starts */
 .hero {
-    background-image: url(../images/hero.jpg);
+    background-image: url(/images/hero.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -216,12 +214,13 @@ flex-column {
 
 /* media queries start - for scaling up to tablets and browsers */
 @media screen and (min-width: 768px) {
-    /* applies to screens between 768px and 980px */
+    /* applies to screens above 768px */
     .hero {
         height: 30vw;
     }
     
     .info img {
+        width: 420px;
         padding-right: 3%;
         padding-left: 3%;
         align-self: flex-start;
