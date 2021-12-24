@@ -17,7 +17,7 @@ body {
 }
 
 
-/* header style start */
+/* header section style start */
 header {
     background-color: var(--dark-color);
     padding: 20px 35px;
@@ -61,10 +61,10 @@ header nav ul li a {
     font-size: 16px;
 }
 /* nav style end */
-/* header style end */
+/* header section style end */
 
 
-/* hero style starts */
+/* hero style section starts */
 .hero {
     background-image: url(/images/hero.jpg);
     background-size: cover;
@@ -76,10 +76,10 @@ header nav ul li a {
     width: 100%;
     height: 50vw;
 }
-/* hero style ends */
+/* hero style section ends */
 
 
-/* about me style starts */
+/* about me section style starts */
 .intro {
     background-color: var(--light-color);
     margin: 0;
@@ -111,28 +111,24 @@ header nav ul li a {
 
 .intro p {
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.5;
     padding-bottom: 3%;
 }
 
 .bio {
     padding: 3% 0%;
 }
-/* about me style ends */
+/* about me section style ends */
 
 
-/* projects style starts */
-.projects {
+/* projects section style starts */
+.projects-section {
     margin: 0;
     background: var(--dark-color);
-    color: var(--light-color);
-    flex: 1;
-    width: 100%;
 }
 
-.project {
+.projects {
     width: 100%;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -142,19 +138,25 @@ header nav ul li a {
     width: 100%;
 }
 
-.projects h2 {
+.projects-section h2 {
     color: var(--light-color);
 }
 
-.projects h4 {
+.projects a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.project h4 {
+    font-size: 22px;
     font-weight: lighter;
     text-align: center;
     padding: 10px;
 }
-/* projects style ends */
+/* projects section style ends */
 
 
-/* contact me style start */
+/* contact me section style start */
 footer {
     background: var(--light-color);
     padding: 3%;
@@ -170,12 +172,12 @@ footer {
 }
 
 .contact a {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color:var(--dark-color);
     padding: 0 10px 10px 10px;
 }
-/* contact me style end */
+/* contact me section style end */
 
 
 /* utility style start */
@@ -207,6 +209,11 @@ flex-column {
 
 /* media queries start - for scaling up to tablets and browsers */
 @media screen and (min-width: 768px) {
+    /* applies to screens between 768px and 980px */
+    .hero {
+        height: 30vw;
+    }
+    
     .intro img {
         width: 42%;
         padding-right: 2%;
@@ -219,18 +226,36 @@ flex-column {
         padding-right: 2%;
     }
 
-    .bio p {
-        font-size: 12px;
+    .info img {
+        align-self: flex-start;
+        margin-top: 4%;
     }
 
     .project {
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: row;
-        justify-content: space-between;
+        flex: 1;
+        margin: 2%;
     }
-
 }
 
+@media screen and (min-width: 980px) {
+    header {
+        justify-content: space-between; 
+    }
 
+    header h1 {
+        font-size: 25px;
+    }
+
+    header nav {
+        font-size: 20px;
+    }
+
+    .hero {
+        height: 25vw;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
 /* media queries end */
