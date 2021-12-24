@@ -66,7 +66,7 @@ header nav ul li a {
 
 /* hero style section starts */
 .hero {
-    background-image: url(/images/hero.jpg);
+    background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -214,9 +214,8 @@ flex-column {
     }
     
     .info img {
-        width: 450px;
-        padding-right: 2%;
-        padding-left: 2%;
+        padding-right: 3%;
+        padding-left: 3%;
         align-self: flex-start;
         margin-top: 3%;
     }
