@@ -129,7 +129,7 @@ header nav ul li a {
     background: var(--dark-color);
 }
 
-.projects {
+.projects article {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
