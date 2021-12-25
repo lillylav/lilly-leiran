@@ -15,3 +15,5 @@ https://lillylav.github.io/portfolio/
 
 # Author: Lilly Leiran
 # Contact: lilly.leiran@gmail.com
+<img width="1440" alt="Screen Shot 2021-12-25 at 2 10 26 PM" src="https://user-images.githubusercontent.com/93904532/147393665-03b7c7b7-2710-4281-82ef-af8ab1bacc52.png">
+<img width="1440" alt="Screen Shot 2021-12-25 at 2 10 35 PM" src="https://user-images.githubusercontent.com/93904532/147393667-ab0a5426-2592-4f56-bc5b-4e3e372755ce.png">
