@@ -130,6 +130,7 @@ header nav ul li a {
 .projects-section article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects {
@@ -215,6 +216,12 @@ flex-column {
 /* media queries start - for scaling up to tablets and browsers */
 @media screen and (min-width: 768px) {
     /* applies to screens above 768px */
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    
     .hero {
         height: 30vw;
     }
