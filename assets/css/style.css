@@ -26,6 +26,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 9999;
 }
 
 header h1 {
