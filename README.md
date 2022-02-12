@@ -13,4 +13,4 @@ HTML & CSS
 ## Deployed Project
 https://lillylav.github.io/portfolio/
 
-## Author: Lilly Leiran
+Author: Lilly Leiran
