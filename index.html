@@ -3,121 +3,154 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <title>Lilly's Portfolio</title>
   </head>
-  <body>
-        <!-- header and navigation --> 
-        <header>
-            <h1>Lilly Leiran's Full Stack Web Developer Portfolio</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#my-projects">My Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>  
-        </header>
+  <body class="lilly-dark-background">
+    <!-- header and navigation --> 
+    <header class="navbar lilly-dark-background">
+        <h1 class="title is-4 mb-0 navbar-item navbar-start lilly-light-text">Lilly Leiran's Full Stack Web Developer Portfolio</h1>
 
-        <!-- hero/jumpbotron -->
-        <section class="hero">
-        </section>
+        <a href="#about-me" class="is-3 navbar-item navbar-end lilly-light-text">About Me</a>
 
+        <a href="#my-projects" class="is-3 navbar-item navbar-end lilly-light-text">My Projects</a>
+
+        <a href="#contact-me" class="is-3 navbar-item navbar-end lilly-light-text">Contact Me</a>
+
+        <a href="./resume.html" class="is-3 navbar-item navbar-end lilly-light-text">Resume</a>
+    </header>
+
+    <!-- hero/jumpbotron -->
+    <section class="hero">
+    </section>
+
+    <!-- body section container -->
+    <section class="container">
         <!-- about me section -->
-        <section id="about-me" class="intro">
-            <div class="flex-row">
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="info">
-                <img src="images/lilly.jpg" alt="lilly, a young woman with a blonde bob smiling" />
-                <div class="flex-column bio">
-                    <p>
-                        My name is Lilly Leiran. I have a Bachelor’s Degree in English with an emphasis in Writing Studies from Utah Valley University 
-                        and I’m currently in the process of earning a Full Stack Web Development Certificate from the University of Utah’s continuing 
-                        education Coding Bootcamp. 
-                    </p>
-                    <p>
-                        I will graduate in May 2022 after learning HTML, CSS, JavaScript, and more! This website you’re currently visiting is the very 
-                        first one I’m writing from scratch without someone telling me exactly what to do! :)
-                    </p>
-                    <p>
-                        Other than my new found love of coding… I love listening to books and podcasts, writing, traveling, watching movies and TV, cooking, 
-                        crocheting, sewing, hiking, weight-lifting, yoga, boxing, and I love making my podcast Story Therapy Podcast. (I’ve so far released 
-                        1 season of my podcast… 20 episodes between July and November 2021! I’ll be back for season 2 after my bootcamp is complete this summer.)
-                    </p>
-                    <p>
-                        I hope you enjoy my work so far and I will keep updating this as I accumulate more work! Thank you for visiting my portfolio and please 
-                        reach out if you’re interested in having me work on a site for you!
-                    </p>
+        <section id="about-me" class="columns box m-3 lilly-light-background">
+            <div class="column">
+                <h2 class="subtitle is-3 has-text-centered lilly-dark-text">
+                    About Me
+                </h2>
+
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <img src="images/lilly.jpg" alt="lilly, a young woman with a blonde bob smiling" />
+                    </div>
+
+                    <div class="column is-two-thirds">
+                        <p class="mb-2 lilly-dark-text">
+                            My name is Lilly Leiran. I have a Bachelor’s Degree in English with an emphasis in Writing Studies from Utah Valley University 
+                            and I’m currently in the process of earning a Full Stack Web Development Certificate from the University of Utah’s continuing 
+                            education Coding Bootcamp. 
+                        </p>
+                        <p class="mb-2 lilly-dark-text">
+                            I will graduate in May 2022 after learning HTML, CSS, JavaScript, and more! This website you’re currently visiting is the very 
+                            first one I’m writing from scratch without someone telling me exactly what to do! :)
+                        </p>
+                        <p class="mb-2 lilly-dark-text">
+                            Other than my new found love of coding… I love listening to books and podcasts, writing, traveling, watching movies and TV, cooking, 
+                            crocheting, sewing, hiking, weight-lifting, yoga, boxing, and I love making my podcast Story Therapy Podcast. (I’ve so far released 
+                            1 season of my podcast… 20 episodes between July and November 2021! I’ll be back for season 2 after my bootcamp is complete this summer.)
+                        </p>
+                        <p class="mb-2 lilly-dark-text">
+                            I hope you enjoy my work so far and I will keep updating this as I accumulate more work! Thank you for visiting my portfolio and please 
+                            reach out if you’re interested in having me work on a site for you!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         
         <!-- projects section -->
-        <section id="my-projects" class="projects-section">
-            <div>
-                <h2 class="section-title">My Projects</h2>
-            </div>
-            <div class="projects">
-                <!-- project cards 1 -->
-                <article class="project">
-                    <a href="https://lillylav.github.io/brain-food/" target="_blank">
-                        <img src="images/brain-food.png" />
-                        <h4>Brain Food: An Entertainment Search Web Application</h4>
-                    </a>
-                </article>
-                <!-- project cards 2 -->
-                <article class="project">
-                    <a href="https://lillylav.github.io/weather-dashboard/" target="_blank">
-                        <img src="images/weather.png" />
-                        <h4>Weather Dashboard: A Weather Conditions Search Application</h4>
-                    </a>
-                </article>
-                <!-- project cards 3 -->
-                <article class="project">
-                    <a href="https://lillylav.github.io/password/" target="_blank">
-                        <img src="images/password.png" />
-                        <h4>Password Generator: With Custom Length and Character Type Selection</h4>
-                    </a>
-                </article>
-                <!-- project card 4 -->
-                <article class="project">
-                    <a href="https://lillylav.github.io/daily-calendar/" target="_blank">
-                        <img src="images/workday-calendar.png" />
-                        <h4>Work Day Calendar: An Responsive Daily Calendar</h4>
-                    </a>
-                </article>
-                <!-- project card 5 -->
-                <article class="project">
-                    <a href="https://lillylav.github.io/git-it-done/" target="_blank">
-                        <img src="images/git-it-done.png" />
-                        <h4>Git-It-Done: An Application to Search Github for Projects With Open Issues</h4>
-                    </a>
-                </article>
-                <!-- project card 6 -->
-                <article class="project">
-                    <a href="https://lillylav.github.io/taskmaster-pro/" target="_blank">
-                        <img src="images/taskmaster-pro.png" />
-                        <h4>Taskmaster Pro: A Kanban-Style Task List Application</h4>
-                    </a>
-                 </article>
+        <section id="my-projects" class="columns box m-3 lilly-light-background">
+            <div class="column">
+                <h2 class="subtitle is-3 has-text-centered lilly-dark-text">
+                    My Projects
+                </h2>
+        
+                <div class="columns is-multiline">
+                    <!-- project cards 1 -->
+                    <article class="column is-one-third box m-3 lilly-dark-background">
+                        <a href="https://lillylav.github.io/brain-food/" target="_blank">
+                            <img src="images/brain-food.png" />
+                            <h4 class="subtitle is-5 has-text-centered lilly-light-text">
+                                Brain Food: An Entertainment Search Web Application
+                            </h4>
+                        </a>
+                    </article>
+
+                    <!-- project cards 2 -->
+                    <article class="column is-one-third box m-3 lilly-dark-background">
+                        <a href="https://lillylav.github.io/weather-dashboard/" target="_blank">
+                            <img src="images/weather.png" />
+                            <h4 class="subtitle is-5 has-text-centered lilly-light-text">
+                                Weather Dashboard: A Weather Conditions Search Application
+                            </h4>
+                        </a>
+                    </article>
+
+                    <!-- project cards 3 -->
+                    <article class="column box is-one-third m-3 lilly-dark-background">
+                        <a href="https://lillylav.github.io/password/" target="_blank">
+                            <img src="images/password.png" />
+                            <h4 class="subtitle is-5 has-text-centered lilly-light-text">
+                                Password Generator: With Custom Length and Character Type Selection
+                            </h4>
+                        </a>
+                    </article>
+
+                    <!-- project card 4 -->
+                    <article class="column box is-one-third m-3 lilly-dark-background">
+                        <a href="https://lillylav.github.io/daily-calendar/" target="_blank">
+                            <img src="images/workday-calendar.png" />
+                            <h4 class="subtitle is-5 has-text-centered lilly-light-text">
+                                Work Day Calendar: An Responsive Daily Calendar
+                            </h4>
+                        </a>
+                    </article>
+
+                    <!-- project card 5 -->
+                    <article class="column box is-one-third m-3 lilly-dark-background">
+                        <a href="https://lillylav.github.io/git-it-done/" target="_blank">
+                            <img src="images/git-it-done.png" />
+                            <h4 class="subtitle is-5 has-text-centered lilly-light-text">
+                                Git-It-Done: An Application to Search Github for Projects With Open Issues
+                            </h4>
+                        </a>
+                    </article>
+
+                    <!-- project card 6 -->
+                    <article class="column box is-one-third m-3 lilly-dark-background">
+                        <a href="https://lillylav.github.io/taskmaster-pro/" target="_blank">
+                            <img src="images/taskmaster-pro.png" />
+                            <h4 class="subtitle is-5 lilly-light-text">
+                                Taskmaster Pro: A Kanban-Style Task List Application
+                            </h4>
+                        </a>
+                    </article>
+                </div>
             </div>
         </section>
+    </section>
 
-        <!-- contact info section -->
-        <footer id="contact-me" >
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact">
-                <a href="mailto:lilly.leiran@gmail.com">lilly.leiran@gmail.com</a>
-                <a href="https://github.com/lillylav" target="_blank">Github Profile</href>
-            </div>
-        </footer>
+    <!-- contact info/footer section -->
+    <footer id="contact-me" class="pb-5 has-text-centered">
+        <h2 class="subtitle is-3 lilly-light-text">
+            Contact Me
+        </h2>
+        <div class="mb-1">
+            <a href="mailto:lilly.leiran@gmail.com" class="lilly-light-text">
+                lilly.leiran@gmail.com
+            </a>
+        </div>
+        <div class="">
+            <a href="https://github.com/lillylav" target="_blank" class="lilly-light-text">
+                Github Profile
+            </a>
+        </div>
+    </footer>
   </body>
 </html>
