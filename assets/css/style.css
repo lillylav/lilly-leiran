@@ -10,264 +10,32 @@
     --dark-color: #1A1423;
 }
 
-/* applies to <body> */
-body {
-    color: var(--dark-color);
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-
-/* header section style start */
-header {
-    background-color: var(--dark-color);
-    padding: 20px 35px;
-    top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 9999;
-}
-
-header h1 {
-    color: var(--light-color);
-    font-weight: lighter;
-    font-size: 30px;
-    margin: 0;
-    text-align: center;
-}
-
-header a {
-    font-size: 20px;
-    text-decoration: none;
-    color:var(--light-color);
-}
-
-/* nav style start */
-header nav {
-    margin: 7px 0;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 16px;
-}
-/* nav style end */
-/* header section style end */
-
 
 /* hero style section starts */
 .hero {
     background-image: url("../../images/hero.jpeg");
     background-size: cover;
     background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     width: 100%;
-    height: 50vw;
+    height: 250px;
 }
 /* hero style section ends */
 
 
-/* about me section style starts */
-.intro {
-    background-color: var(--light-color);
-    margin: 0;
-    padding: 0;
-}
-
-.intro h2 {
-    padding-top: 20px;
-}
-
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.info div {
-    width: 80%;
-}
-
-.intro img {
-    width: 100%;
-    height: auto;
-    align-self: center;
-    opacity: 90%;
-}
-
-.intro p {
-    font-size: 16px;
-    line-height: 1.5;
-    padding-bottom: 3%;
-}
-
-.bio {
-    padding: 3% 0%;
-}
-/* about me section style ends */
-
-
-/* projects section style starts */
-.projects-section {
-    margin: 0;
-    background: var(--dark-color);
-}
-
-.projects-section article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.projects {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.project img {
-    width: 100%;
-}
-
-.projects-section h2 {
-    color: var(--light-color);
-}
-
-.projects a {
-    color: var(--light-color);
-    text-decoration: none;
-}
-
-.project h4 {
-    font-size: 22px;
-    font-weight: lighter;
-    text-align: center;
-    padding: 10px;
-}
-/* projects section style ends */
-
-
-/* contact me section style start */
-footer {
-    display: block;
-    background: var(--light-color);
-    padding: 3%;
-}
-
-.contact {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact a {
-    font-size: 18px;
-    text-decoration: none;
-    color:var(--dark-color);
-    padding: 0 10px 0px 10px;
-}
-/* contact me section style end */
-
-
 /* utility style start */
-section {
-    padding: 40px;
+.lilly-light-text {
+    color: var(--light-color);
 }
 
-.section-title {
+.lilly-light-background {
+    background-color: var(--light-color);
+}
+
+.lilly-dark-text {
     color: var(--dark-color);
-    font-size: 25px;
-    font-weight: lighter;
-    text-align: center;
-    padding: 0px 25px 10px 25px;
-    border-bottom: 2px solid;
-    margin: 0px auto 15px auto;
-    width: fit-content;
 }
 
-flex-row {
-    display: flex;
-}
-
-flex-column {
-    display: flex;
-    flex-flow: column;
+.lilly-dark-background {
+    background-color: var(--dark-color);
 }
 /* utility style end */
-
-
-/* media queries start - for scaling up to tablets and browsers */
-@media screen and (min-width: 768px) {
-    /* applies to screens above 768px */
-    header {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-    }
-    
-    .hero {
-        height: 30vw;
-    }
-    
-    .info img {
-        width: 420px;
-        padding-right: 3%;
-        padding-left: 3%;
-        align-self: flex-start;
-        margin-top: 3%;
-    }
-
-    .info div {
-        width: 55%;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .project {
-        flex: 0 1 350px;
-        margin: 2%;
-    }
-}
-
-@media screen and (min-width: 980px) {
-    /* applies to screens above 980px */
-    header {
-        justify-content: space-between; 
-    }
-
-    header h1 {
-        font-size: 25px;
-    }
-
-    header nav {
-        font-size: 20px;
-    }
-
-    .hero {
-        height: 25vw;
-    }
-
-    .section-title {
-        font-size: 30px;
-    }
-
-}
-/* media queries end */
