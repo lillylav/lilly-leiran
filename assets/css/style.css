@@ -38,4 +38,20 @@
 .lilly-dark-background {
     background-color: var(--dark-color);
 }
+
+.navbar-item:hover {
+    background-color: var(--light-color) !important;
+    color: var(--dark-color) !important;
+}
+
+.hover-ignore:hover {
+    background-color: var(--dark-color) !important;
+    color: var(--light-color) !important;
+}
+
+.work-list {
+    list-style: square;
+    margin-left: 30px;
+    padding-left: 10px;
+}
 /* utility style end */
