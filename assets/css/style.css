@@ -13,7 +13,7 @@
 
 /* hero style section starts */
 .hero {
-    background-image: url("../../images/hero.jpeg");
+    background-image: url("../../assets/images/hero.jpeg");
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -37,6 +37,11 @@
 
 .lilly-dark-background {
     background-color: var(--dark-color);
+}
+
+header a {
+    align-items: flex-end !important;
+    margin-bottom: 20px;
 }
 
 .navbar-item:hover {
