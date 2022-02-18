@@ -8,6 +8,7 @@
 :root {
     --light-color: #ADA8B6;
     --dark-color: #1A1423;
+    --medium-color: #645E6D;
 }
 /* universal selector */
 
@@ -29,17 +30,17 @@
     background-color: var(--dark-color);
 }
 
-a {
+.underline {
     text-decoration: underline;
+}
+
+a:hover {
+    color: var(--medium-color);
 }
 /* utility style end */
 
 
 /* header style section starts */
-.navbar a {
-    text-decoration: none;
-}
-
 .navbar-item:hover {
     background-color: var(--light-color) !important;
     color: var(--dark-color) !important;
@@ -85,6 +86,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.project h4:hover {
+    color: var(--medium-color);
 }
 
 .project img {
