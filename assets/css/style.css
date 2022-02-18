@@ -9,6 +9,20 @@
     --light-color: #ADA8B6;
     --dark-color: #1A1423;
 }
+/* universal selector */
+
+
+/* header style section starts */
+.navbar-item:hover {
+    background-color: var(--light-color) !important;
+    color: var(--dark-color) !important;
+}
+
+.hover-ignore:hover {
+    background-color: var(--dark-color) !important;
+    color: var(--light-color) !important;
+}
+/* header style section ends */
 
 
 /* hero style section starts */
@@ -20,6 +34,41 @@
     height: 250px;
 }
 /* hero style section ends */
+
+
+/* portfolio projects style section starts */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project img {
+    width: 100%;
+}
+/* portfolio projects style section ends */
+
+
+/* resume work style section starts */
+.work-list {
+    list-style: square;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+/* resume work style section ends */
 
 
 /* utility style start */
@@ -38,25 +87,25 @@
 .lilly-dark-background {
     background-color: var(--dark-color);
 }
-
-header a {
-    align-items: flex-end !important;
-    margin-bottom: 20px;
-}
-
-.navbar-item:hover {
-    background-color: var(--light-color) !important;
-    color: var(--dark-color) !important;
-}
-
-.hover-ignore:hover {
-    background-color: var(--dark-color) !important;
-    color: var(--light-color) !important;
-}
-
-.work-list {
-    list-style: square;
-    margin-left: 30px;
-    padding-left: 10px;
-}
 /* utility style end */
+
+@media screen and (min-width: 768px) {
+    /* applies to screens above 768px */
+    header a {
+        align-items: flex-end !important;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        flex: 0 1 300px;
+        margin: 2%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    /* applies to screens above 980px */
+    .project {
+        flex: 0 1 500px;
+        margin: 2%;
+    }
+}
