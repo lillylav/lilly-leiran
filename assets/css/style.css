@@ -12,7 +12,34 @@
 /* universal selector */
 
 
+/* utility style start */
+.lilly-light-text {
+    color: var(--light-color);
+}
+
+.lilly-light-background {
+    background-color: var(--light-color);
+}
+
+.lilly-dark-text {
+    color: var(--dark-color);
+}
+
+.lilly-dark-background {
+    background-color: var(--dark-color);
+}
+
+a {
+    text-decoration: underline;
+}
+/* utility style end */
+
+
 /* header style section starts */
+.navbar a {
+    text-decoration: none;
+}
+
 .navbar-item:hover {
     background-color: var(--light-color) !important;
     color: var(--dark-color) !important;
@@ -37,6 +64,10 @@
 
 
 /* portfolio projects style section starts */
+.projects a {
+    color: var(--light-color);
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -71,29 +102,13 @@
 /* resume work style section ends */
 
 
-/* utility style start */
-.lilly-light-text {
-    color: var(--light-color);
-}
-
-.lilly-light-background {
-    background-color: var(--light-color);
-}
-
-.lilly-dark-text {
-    color: var(--dark-color);
-}
-
-.lilly-dark-background {
-    background-color: var(--dark-color);
-}
-/* utility style end */
-
+/* custom responsive design start */
 @media screen and (min-width: 768px) {
     /* applies to screens above 768px */
-    header a {
-        align-items: flex-end !important;
-        margin-bottom: 20px;
+    .navbar a {
+        height: fit-content;
+        padding: 20px;
+        margin-top: 65px;
     }
 
     .project {
@@ -109,3 +124,4 @@
         margin: 2%;
     }
 }
+/* custom responsive design end */
