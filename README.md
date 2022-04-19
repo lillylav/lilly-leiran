@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Description
-This site is meant to be a resource to display my work for future employers and give them a way to contact me. 
+This site is a resource to display my work for future employers and give them a way to contact me. 
 
 ## Built with
 HTML5,CSS3, Bulma
